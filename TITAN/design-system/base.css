@@ -1,0 +1,162 @@
+/* ═══════════════════════════════════════════════════════════
+   ELITE BASE STYLES
+   Modern reset + Typography + Layout primitives + Components
+   Copy into every new project alongside tokens.css
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── Reset ─── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    font-weight: var(--weight-regular);
+    line-height: var(--leading-normal);
+    color: var(--color-text-secondary);
+    background-color: var(--color-bg-primary);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* ─── Selection & Scrollbar ─── */
+::selection { background: var(--color-accent); color: white; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--color-bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: var(--radius-full); }
+::-webkit-scrollbar-thumb:hover { background: var(--color-border-hover); }
+
+/* ─── Focus ─── */
+:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+}
+
+/* ─── Links ─── */
+a { color: var(--color-accent); text-decoration: none; transition: color var(--duration-fast) ease; }
+a:hover { color: var(--color-accent-hover); }
+
+/* ─── Typography ─── */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-text-primary);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    font-weight: var(--weight-extrabold);
+}
+h1 { font-size: var(--text-hero); letter-spacing: var(--tracking-tighter); font-weight: var(--weight-black); }
+h2 { font-size: var(--text-5xl); }
+h3 { font-size: var(--text-3xl); }
+h4 { font-size: var(--text-2xl); }
+p  { max-width: 65ch; }
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--color-text-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.eyebrow {
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-caps);
+    color: var(--color-accent);
+}
+
+/* ─── Media ─── */
+img, video, svg { display: block; max-width: 100%; height: auto; }
+ul, ol { list-style: none; }
+button { font-family: var(--font-body); cursor: pointer; border: none; background: none; color: inherit; }
+
+/* ─── Buttons ─── */
+.btn {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-base); font-weight: var(--weight-semibold);
+    border-radius: var(--radius-lg);
+    transition: all var(--duration-fast) ease;
+    position: relative; overflow: hidden; white-space: nowrap;
+}
+.btn-primary {
+    background: var(--color-accent); color: white;
+    box-shadow: var(--shadow-glow);
+}
+.btn-primary:hover {
+    background: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow-lg);
+}
+.btn-secondary {
+    background: var(--glass-bg); color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+    backdrop-filter: blur(var(--glass-blur));
+}
+.btn-secondary:hover {
+    background: var(--glass-bg-hover);
+    border-color: var(--color-border-hover);
+    transform: translateY(-2px);
+}
+.btn-lg {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--text-lg);
+    border-radius: var(--radius-xl);
+}
+.btn .arrow { display: inline-block; transition: transform var(--duration-fast) ease; }
+.btn:hover .arrow { transform: translateX(4px); }
+
+/* ─── Layout ─── */
+.container { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 var(--gutter); }
+.container-narrow { max-width: var(--max-width-narrow); }
+.container-wide { max-width: var(--max-width-wide); }
+.section { padding: var(--space-section) 0; }
+
+/* ─── Glass Card ─── */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    transition: all var(--duration-fast) ease;
+}
+.glass-card:hover {
+    background: var(--glass-bg-hover);
+    border-color: var(--color-border-hover);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ─── Badge ─── */
+.badge {
+    display: inline-flex; align-items: center; gap: var(--space-1);
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--text-xs); font-weight: var(--weight-semibold);
+    text-transform: uppercase; letter-spacing: var(--tracking-wide);
+    border-radius: var(--radius-full);
+    background: var(--color-accent-subtle); color: var(--color-accent);
+}
+
+/* ─── Reveal Classes (GSAP reveals these) ─── */
+.reveal       { opacity: 0; transform: translateY(40px); }
+.reveal-left  { opacity: 0; transform: translateX(-40px); }
+.reveal-right { opacity: 0; transform: translateX(40px); }
+.reveal-scale { opacity: 0; transform: scale(0.92); }
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+    h1 { font-size: var(--text-4xl); }
+    h2 { font-size: var(--text-3xl); }
+    .section { padding: var(--space-10) 0; }
+    .hide-mobile { display: none !important; }
+}
+@media (min-width: 769px) { .hide-desktop { display: none !important; } }

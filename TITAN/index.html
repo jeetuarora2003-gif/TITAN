@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Titan — India's most trusted watchmaker since 1984. Where every second is crafted with purpose.">
+    <title>TITAN — Where Every Second Is Crafted</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js" defer></script>
+</head>
+<body>
+
+    <!-- Film grain -->
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <span class="preloader-logo">TITAN</span>
+            <div class="preloader-bar"><div class="preloader-fill" id="preloader-fill"></div></div>
+            <span class="preloader-tag">Where Every Second Is Crafted</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#" class="nav-logo">TITAN</a>
+        <div class="nav-links">
+            <a href="#story">[ Story ]</a>
+            <a href="#collections">[ Collections ]</a>
+            <a href="#craft">[ Craft ]</a>
+            <a href="#legacy">[ Legacy ]</a>
+        </div>
+        <a href="https://www.titan.co.in/" target="_blank" rel="noopener noreferrer" class="nav-cta">Explore ↗</a>
+    </nav>
+
+    <!-- ══════════ ACT I — CINEMATIC HERO ══════════ -->
+
+    <section class="hero" id="hero">
+        <!-- Ambient aurora glow behind watch -->
+        <div class="hero-aurora" id="hero-aurora"></div>
+
+        <!-- Watch with float animation + mouse parallax -->
+        <div class="hero-watch-wrap" id="hero-watch-wrap">
+            <img src="images/hero-watch.png" alt="Titan Edge — Ultra-slim luxury analog watch" class="hero-watch" id="hero-watch">
+            <!-- Circular rotating text ring around watch -->
+            <svg class="hero-ring" viewBox="0 0 300 300" id="hero-ring">
+                <defs>
+                    <path id="circlePath" d="M 150,150 m -120,0 a 120,120 0 1,1 240,0 a 120,120 0 1,1 -240,0" />
+                </defs>
+                <text>
+                    <textPath href="#circlePath">EDGE COLLECTION · WORLD'S SLIMMEST · 3.5MM · EST. 1984 · </textPath>
+                </text>
+            </svg>
+        </div>
+
+        <div class="hero-content" id="hero-content">
+            <p class="hero-eyebrow">A Tata Enterprise · Est. 1984</p>
+            <h1 class="hero-headline">
+                <span class="line"><span class="line-inner">Time</span></span>
+                <span class="line"><span class="line-inner">Is <em>Art</em></span></span>
+            </h1>
+            <p class="hero-sub">Four decades of obsession.<br>250 million stories on wrists worldwide.</p>
+        </div>
+
+        <div class="hero-foot" id="hero-foot">
+            <div class="hero-stat">
+                <strong>250M+</strong><span>Watches Crafted</span>
+            </div>
+            <div class="scroll-hint">
+                <span>Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+            <div class="hero-stat right">
+                <strong>40+</strong><span>Years of Mastery</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ ACT II — THE STORY ══════════ -->
+
+    <section class="manifesto" id="story">
+        <div class="ambient-glow glow-warm" aria-hidden="true"></div>
+        <div class="container-narrow">
+            <span class="label">[ The Story ]</span>
+            <p class="manifesto-text" id="manifesto-text">
+                Every mass-produced watch tells the same story. We refused.
+                In 1984, from a small facility in Hosur, we began writing a
+                different one — where Indian hands shape Swiss precision,
+                where gold is sculpted into poetry, and where a single
+                timepiece carries the weight of four decades of obsession.
+            </p>
+        </div>
+    </section>
+
+    <!-- Authority Marquee -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Superbrands India</span><span class="dot">◆</span>
+            <span>5th Largest Watchmaker Globally</span><span class="dot">◆</span>
+            <span>Tata Group</span><span class="dot">◆</span>
+            <span>Featured in Forbes India</span><span class="dot">◆</span>
+            <span>32+ Countries</span><span class="dot">◆</span>
+            <span>Consumer Trust Award</span><span class="dot">◆</span>
+            <span>Superbrands India</span><span class="dot">◆</span>
+            <span>5th Largest Watchmaker Globally</span><span class="dot">◆</span>
+            <span>Tata Group</span><span class="dot">◆</span>
+            <span>Featured in Forbes India</span><span class="dot">◆</span>
+            <span>32+ Countries</span><span class="dot">◆</span>
+            <span>Consumer Trust Award</span><span class="dot">◆</span>
+        </div>
+    </div>
+
+    <!-- ══════════ ACT III — COLLECTIONS ══════════ -->
+
+    <section class="collections" id="collections">
+        <header class="section-intro">
+            <span class="label">[ The Collections ]</span>
+            <h2 class="section-heading">
+                <span class="line"><span class="line-inner">Three Stories.</span></span>
+                <span class="line"><span class="line-inner">One Legacy.</span></span>
+            </h2>
+        </header>
+
+        <!-- Edge — cool blue accent glow -->
+        <article class="collection-panel" id="panel-edge" data-accent="blue">
+            <div class="ambient-glow glow-blue" aria-hidden="true"></div>
+            <div class="panel-img">
+                <img src="images/edge-watch.png" alt="Titan Edge — World's slimmest watch" loading="lazy">
+            </div>
+            <div class="panel-content">
+                <span class="panel-num">01</span>
+                <span class="label">[ Ultra-Slim ]</span>
+                <h3 class="panel-title">Edge</h3>
+                <p class="panel-tagline">The World's Slimmest Watch.</p>
+                <p class="panel-body">At just 3.5mm, the Edge defies physics. Crafted from Grade 5 titanium and ceramic — lighter than air, tougher than steel. A movement just 1.15mm thin. Wear it and forget it's there. Until someone asks.</p>
+                <div class="panel-specs">
+                    <div><strong>3.5mm</strong><span>Case</span></div>
+                    <div><strong>Ti-5</strong><span>Grade</span></div>
+                    <div><strong>1.15mm</strong><span>Movement</span></div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Raga — warm rose accent glow -->
+        <article class="collection-panel reverse" id="panel-raga" data-accent="rose">
+            <div class="ambient-glow glow-rose" aria-hidden="true"></div>
+            <div class="panel-img">
+                <img src="images/raga-watch.png" alt="Titan Raga — Jewelry meets horology" loading="lazy">
+            </div>
+            <div class="panel-content">
+                <span class="panel-num">02</span>
+                <span class="label">[ For Her ]</span>
+                <h3 class="panel-title">Raga</h3>
+                <p class="panel-tagline">Where Jewelry Meets Time.</p>
+                <p class="panel-body">Swarovski crystals. Mother-of-pearl dials. Since 1992, the Raga has blurred the line between watch and jewellery — a wrist-worn work of art that tells time as an afterthought.</p>
+                <div class="panel-specs">
+                    <div><strong>30yr</strong><span>Legacy</span></div>
+                    <div><strong>Swarovski</strong><span>Crystal</span></div>
+                    <div><strong>MoP</strong><span>Dial</span></div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Nebula — warm gold accent glow -->
+        <article class="collection-panel" id="panel-nebula" data-accent="gold">
+            <div class="ambient-glow glow-gold" aria-hidden="true"></div>
+            <div class="panel-img">
+                <img src="images/nebula-watch.png" alt="Titan Nebula — 18K solid gold heirloom" loading="lazy">
+            </div>
+            <div class="panel-content">
+                <span class="panel-num">03</span>
+                <span class="label">[ Solid Gold ]</span>
+                <h3 class="panel-title">Nebula</h3>
+                <p class="panel-tagline">India's First Solid Gold Watch.</p>
+                <p class="panel-body">22K gold. Diamonds. Rubies. Filigree artistry passed down through generations. The Nebula isn't a watch — it's an heirloom. Crafted for those who understand that true luxury is inherited.</p>
+                <div class="panel-specs">
+                    <div><strong>22K</strong><span>Gold</span></div>
+                    <div><strong>Diamond</strong><span>Set</span></div>
+                    <div><strong>Filigree</strong><span>Art</span></div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- ══════════ ACT IV — THE CRAFT ══════════ -->
+
+    <section class="craft" id="craft">
+        <div class="ambient-glow glow-warm" aria-hidden="true"></div>
+        <header class="section-intro">
+            <span class="label">[ The Craft ]</span>
+            <h2 class="section-heading">
+                <span class="line"><span class="line-inner">Obsessed With</span></span>
+                <span class="line"><span class="line-inner">Every <em>Detail</em></span></span>
+            </h2>
+        </header>
+        <div class="container">
+            <div class="craft-grid">
+                <div class="craft-card" data-glow="blue">
+                    <span class="craft-num">01</span>
+                    <h4>1,247 Components</h4>
+                    <p>Each movement — over a thousand precision-machined parts, tested to Swiss-grade tolerances.</p>
+                </div>
+                <div class="craft-card" data-glow="rose">
+                    <span class="craft-num">02</span>
+                    <h4>72-Hour Testing</h4>
+                    <p>Temperature. Pressure. Impact. Every watch survives three days of relentless stress testing.</p>
+                </div>
+                <div class="craft-card" data-glow="gold">
+                    <span class="craft-num">03</span>
+                    <h4>Hand-Finished</h4>
+                    <p>Dial printing to diamond setting — every critical detail passes through the hands of master artisans.</p>
+                </div>
+                <div class="craft-card" data-glow="warm">
+                    <span class="craft-num">04</span>
+                    <h4>Made in Hosur</h4>
+                    <p>5,000+ skilled craftspeople in Tamil Nadu. Ancestral tradition meets cutting-edge technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ ACT V — THE LEGACY ══════════ -->
+
+    <section class="legacy" id="legacy">
+        <div class="container">
+            <header class="section-intro" style="padding-top:0">
+                <span class="label">[ The Legacy ]</span>
+            </header>
+            <div class="legacy-numbers">
+                <div class="legacy-stat">
+                    <span class="legacy-num" data-target="250">0</span><span class="legacy-suffix">M+</span>
+                    <span class="legacy-label">Watches Sold</span>
+                </div>
+                <div class="legacy-stat">
+                    <span class="legacy-num" data-target="40">0</span><span class="legacy-suffix">+</span>
+                    <span class="legacy-label">Years of Mastery</span>
+                </div>
+                <div class="legacy-stat">
+                    <span class="legacy-num" data-target="832">0</span>
+                    <span class="legacy-label">Showrooms</span>
+                </div>
+                <div class="legacy-stat">
+                    <span class="legacy-num" data-target="32">0</span><span class="legacy-suffix">+</span>
+                    <span class="legacy-label">Countries</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voices -->
+    <section class="voices">
+        <div class="ambient-glow glow-blue" aria-hidden="true"></div>
+        <div class="container">
+            <header class="section-intro">
+                <span class="label">[ Voices ]</span>
+                <h2 class="section-heading">
+                    <span class="line"><span class="line-inner">Worn by Millions.</span></span>
+                    <span class="line"><span class="line-inner">Loved by <em>Generations.</em></span></span>
+                </h2>
+            </header>
+            <div class="voices-grid">
+                <blockquote class="voice-card">
+                    <p>"My father gave me his Titan on my graduation day. Twenty years later, it still runs perfectly. That's not craftsmanship — that's a legacy."</p>
+                    <footer><strong>Rajesh K.</strong><span>Owner since 2004</span></footer>
+                </blockquote>
+                <blockquote class="voice-card">
+                    <p>"The Raga makes me feel like I'm wearing art. I get compliments every single day. It's the one accessory I never take off."</p>
+                    <footer><strong>Priya M.</strong><span>Raga Cocktail</span></footer>
+                </blockquote>
+                <blockquote class="voice-card">
+                    <p>"I've owned Rolexes and Omegas. The Titan Edge at 3.5mm is the most comfortable watch I've ever worn. India should be proud."</p>
+                    <footer><strong>Arjun S.</strong><span>Edge Titanium</span></footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ ACT VI — THE CALL ══════════ -->
+
+    <section class="finale" id="finale">
+        <div class="ambient-glow glow-gold" aria-hidden="true"></div>
+        <div class="finale-content">
+            <span class="label">[ Begin Your Story ]</span>
+            <h2 class="finale-heading">
+                <span class="line"><span class="line-inner">Your Time</span></span>
+                <span class="line"><span class="line-inner">Deserves <em>Better</em></span></span>
+            </h2>
+            <p class="finale-sub">Join 250 million who chose to wear something meaningful.</p>
+            <div class="finale-ctas">
+                <a href="https://www.titan.co.in/shop/watches" target="_blank" rel="noopener noreferrer" class="btn-gold">Find Your Titan <span>↗</span></a>
+                <a href="https://www.titan.co.in/store-locator" target="_blank" rel="noopener noreferrer" class="btn-outline">Visit a Showroom</a>
+            </div>
+            <p class="finale-fine">Free shipping · 2-year warranty · Easy returns</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="footer-logo">TITAN</span>
+                <p>A Tata Enterprise.<br>India's most trusted watchmaker since 1984.</p>
+            </div>
+            <div class="footer-col">
+                <h5>[ Collections ]</h5>
+                <a href="#">Edge</a><a href="#">Raga</a><a href="#">Nebula</a><a href="#">Automatics</a>
+            </div>
+            <div class="footer-col">
+                <h5>[ Company ]</h5>
+                <a href="#">About</a><a href="#">Careers</a><a href="#">Sustainability</a><a href="#">Press</a>
+            </div>
+            <div class="footer-col">
+                <h5>[ Support ]</h5>
+                <a href="#">Find a Store</a><a href="#">Warranty</a><a href="#">Care Guide</a><a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© 2026 Titan Company Limited</span>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+</html>

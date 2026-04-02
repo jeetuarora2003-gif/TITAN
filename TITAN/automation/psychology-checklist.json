@@ -1,0 +1,201 @@
+{
+    "principles": [
+        {
+            "id": 1,
+            "name": "Reciprocity",
+            "description": "People feel obligated to return favors. Give value before asking.",
+            "htmlComment": "<!-- CIALDINI: Reciprocity -->",
+            "implementations": [
+                "Free tool or calculator",
+                "Free downloadable guide / checklist",
+                "Free trial with no credit card",
+                "Preview / sample of premium content",
+                "Free consultation or audit offer",
+                "Valuable blog content / tutorial"
+            ],
+            "ux_patterns": [
+                "Show free value above the fold before any ask",
+                "Lead magnet with immediate delivery",
+                "Interactive demo that gives results before signup"
+            ],
+            "audit_questions": [
+                "Does the user receive something before being asked to pay/signup?",
+                "Is the free value genuinely useful (not just a teaser)?",
+                "Is the give-before-ask ratio at least 3:1?"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Scarcity",
+            "description": "Limited availability drives urgency and perceived value.",
+            "htmlComment": "<!-- CIALDINI: Scarcity -->",
+            "implementations": [
+                "Countdown timer for limited offer",
+                "'Only X left in stock' indicator",
+                "Seasonal or time-limited pricing",
+                "'Enrollment closes in...' messaging",
+                "Limited edition / exclusive access",
+                "Early bird pricing with deadline"
+            ],
+            "ux_patterns": [
+                "Countdown timer in hero or pricing section",
+                "Stock indicator near buy button",
+                "Banner showing offer expiration"
+            ],
+            "audit_questions": [
+                "Is the scarcity genuine (not manufactured)?",
+                "Is the urgency clearly communicated?",
+                "Does the scarcity element have high visual weight?"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Authority",
+            "description": "People trust experts and established credentials.",
+            "htmlComment": "<!-- CIALDINI: Authority -->",
+            "implementations": [
+                "Press / media logos ('As featured in...')",
+                "Industry certifications and awards",
+                "Expert endorsements with credentials",
+                "Partnership logos (Google, AWS, etc.)",
+                "Case studies with measurable results",
+                "Author bio with qualifications"
+            ],
+            "ux_patterns": [
+                "Logo bar below hero section",
+                "Trust badges near CTA / checkout",
+                "Author authority box on content pages"
+            ],
+            "audit_questions": [
+                "Are authority signals visible above the fold?",
+                "Do endorsements include specific credentials?",
+                "Are logos from recognizable brands?"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Consistency",
+            "description": "People want to act consistently with prior commitments.",
+            "htmlComment": "<!-- CIALDINI: Consistency -->",
+            "implementations": [
+                "Multi-step forms (foot-in-the-door)",
+                "Product configurator / quiz before purchase",
+                "Email signup before main conversion",
+                "Free account before premium upsell",
+                "'Yes/No' micro-commitment questions",
+                "Progress bars showing completion"
+            ],
+            "ux_patterns": [
+                "Step 1 of 3 progress indicators",
+                "Quiz that leads to personalized recommendation",
+                "Save progress / wishlist before purchase"
+            ],
+            "audit_questions": [
+                "Is the first commitment small and easy?",
+                "Does each step feel like a natural progression?",
+                "Is there a progress indicator showing investment?"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Liking",
+            "description": "People are influenced by those they like and relate to.",
+            "htmlComment": "<!-- CIALDINI: Liking -->",
+            "implementations": [
+                "Founder / team story section",
+                "Behind-the-scenes content",
+                "Warm, conversational copy tone",
+                "Relatable customer stories",
+                "Brand personality in micro-copy",
+                "Attractive, human photography"
+            ],
+            "ux_patterns": [
+                "About section with real team photos",
+                "Conversational chatbot / onboarding",
+                "Humorous or warm error messages"
+            ],
+            "audit_questions": [
+                "Does the brand feel like a likeable person?",
+                "Is there a human story or face visible?",
+                "Does the copy feel warm, not corporate?"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Social Proof",
+            "description": "People look to others' actions to determine their own.",
+            "htmlComment": "<!-- CIALDINI: Social Proof -->",
+            "implementations": [
+                "Customer testimonials with photos",
+                "Star ratings / review scores",
+                "User count ('Join 10,000+ users')",
+                "Live activity notifications",
+                "Case study results with numbers",
+                "Social media follower counts"
+            ],
+            "ux_patterns": [
+                "Testimonial carousel near CTA",
+                "Real-time notification toasts ('X just signed up')",
+                "Rating stars on product cards"
+            ],
+            "audit_questions": [
+                "Are testimonials from real, named people?",
+                "Do social proof numbers feel specific (not rounded)?",
+                "Is social proof visible near decision points (CTA, pricing)?"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Unity",
+            "description": "Shared identity creates powerful bonds and belonging.",
+            "htmlComment": "<!-- CIALDINI: Unity -->",
+            "implementations": [
+                "Community membership ('Join the tribe')",
+                "Shared identity language ('For creators')",
+                "Exclusive group access",
+                "User-generated content / showcase",
+                "Shared values / mission statement",
+                "Ambassador / affiliate program"
+            ],
+            "ux_patterns": [
+                "Community section with member spotlights",
+                "Identity-based headline ('Built for developers')",
+                "Mission banner connecting brand to cause"
+            ],
+            "audit_questions": [
+                "Does the visitor feel like they belong to a group?",
+                "Is the shared identity clearly stated?",
+                "Does joining create a sense of exclusivity?"
+            ]
+        }
+    ],
+    "loss_aversion": {
+        "description": "People feel losses 2x more than equivalent gains. Frame headlines around what users LOSE by not acting.",
+        "transformation_examples": [
+            {
+                "before": "Get faster load times",
+                "after": "Stop losing 53% of visitors to slow loading"
+            },
+            {
+                "before": "Improve your SEO rankings",
+                "after": "Stop bleeding traffic to competitors who rank above you"
+            },
+            {
+                "before": "Save money on subscriptions",
+                "after": "You're throwing away $2,400/year on tools you don't use"
+            },
+            {
+                "before": "Increase team productivity",
+                "after": "Your team wastes 12 hours/week on tasks AI can handle"
+            }
+        ]
+    },
+    "anchoring": {
+        "description": "The first number a person sees becomes their reference point. Always show the higher number first.",
+        "examples": [
+            "Show original price before discount: ~~$299~~ $49",
+            "Lead with user count: 'Used by 500+ Fortune 500 companies'",
+            "Show time saved: 'Save 40 hours/month (that's a full work week)'"
+        ]
+    }
+}
