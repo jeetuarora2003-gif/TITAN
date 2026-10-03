@@ -1,22 +1,19 @@
-# TITAN - Quiet Luxury Experience
+# TITAN — Watch Showcase Concept
 
-**TITAN** is a world-class, multi-award-winning caliber digital experience designed to encapsulate the essence of *"Quiet Luxury"*. 
+An independent frontend concept exploring watch-product presentation through typography, imagery and scroll-driven animation. This repository does not establish a commercial relationship with the brand.
 
-Leveraging cutting-edge cinematic scrollytelling, high-performance GSAP animations, and perfectly tuned responsive layouts, this landing page redefines the presentation of premium watchmaking. 
+## Stack
+HTML · CSS · JavaScript · GSAP / ScrollTrigger
 
 ## Features
+- Responsive product showcase and navigation.
+- Scroll-triggered reveals and animated product sections.
+- Shared visual tokens and animation styles.
 
-*   **Cinematic Hero Entry**: Uses complex, scroll-triggered navigation reveal logic optimized for pristine entry flow.
-*   **Awwwards-Caliber Scrollytelling**: Powered natively by GSAP's advanced ScrollTrigger library, seamlessly fading, sliding, and masking product silhouettes across viewport thresholds.
-*   **Transparent Image Masking**: Employs bespoke image masking mechanics to elegantly cut and fade background profiles, keeping focus purely on craftsmanship.
-*   **Design Token Infrastructure**: Pre-configured global CSS variables that perfectly encapsulate premium HSL color ranges and dynamic typographic descender adjustments.
-*   **Responsive Architecture**: Implements scalable viewport boundaries across grid layers to guarantee identical "Apple-like" layout integrity on mobile terminals vs. ultrawide monitors.
+## View the project
+[Hosted preview](https://titan-opal-six.vercel.app)
 
-## Framework Built
-- HTML5 (Semantic Document Modeling)
-- Vanilla CSS (`style.css` - Custom Built Premium Variables)
-- Vanilla JavaScript (`main.js`)
-- GSAP & GSAP ScrollTrigger
+For local viewing, serve the `TITAN/` directory with a static HTTP server and open its `index.html` page. Internet access may be needed for externally hosted dependencies.
 
-## Purpose
-Built to prove that hyper-luxurious front-end experiences do not strictly require heavy web frameworks like React or ThreeJS. By applying refined motion mathematics and stringent layout constraints natively, TITAN delivers immersive storytelling with absolute zero-latency execution.
+## Scope
+This is a frontend presentation project, not a transactional store. It demonstrates the overlap between motion design and web development. No performance benchmark or award claim is made.
